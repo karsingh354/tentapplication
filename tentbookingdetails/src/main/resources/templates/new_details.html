@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>NEW ORDER BOOKED</title>
+</head>
+<body>
+	<div align="center">
+		<h1>NEW ORDER BOOKING</h1>
+		<br />
+		<form action="#" th:action="@{/save}" th:object="${details}"
+			method="post">
+
+			<table border="0" cellpadding="10">
+			<body style="background-color:powderblue;">
+			
+
+			
+				<tr>
+					<td>CUSTOMER NAME:</td>
+					<td><input type="text" th:field="*{customername}" /></td>
+				</tr>
+				<tr>
+					<td>NUMBER OF CHAIRS:</td>
+					<td><input type="text" th:field="*{numberofchairs}" /></td>
+				</tr>
+				<tr>
+					<td>NUMBER OF TABLES:</td>
+					<td><input type="text" th:field="*{numberoftables}" /></td>
+				</tr>
+				<tr>
+					<td>NUMBERS OF FOLDINGS:</td>
+					<td><input type="text" th:field="*{numberoffoldings}" /></td>
+				</tr>								
+				<tr>
+				<tr>
+					<td>NUMBER OF COFFEE MACHINES:</td>
+					<td><input type="text" th:field="*{numberofcoffeemachines}" /></td>
+				</tr>								
+				<tr>
+				<tr>
+					<td>NUMBER OF MAHARAJACHAIRS:</td>
+					<td><input type="text" th:field="*{numberofmaharajachairs}" /></td>
+				</tr>	
+				<tr>
+					<td>BOOKED DATE:</td>
+					<td><input type="text" th:field="*{bookeddate}" /></td>
+				</tr>							
+				<tr>
+				<tr>
+					<td>TOTAL AMOUNT:</td>
+					<td><input type="text" th:field="*{totalammount}" /></td>
+				</tr>								
+				<tr>
+					<td colspan="2"><button type="submit">Save</button> </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
